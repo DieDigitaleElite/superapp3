@@ -170,9 +170,9 @@ const App: React.FC = () => {
               <div className="grid md:grid-cols-2 gap-10 items-start">
                 <div className="space-y-6">
                   <img src={state.resultImage!} className="w-full rounded-[40px] shadow-2xl border-4 border-white" />
-                  <div className="flex flex-col sm:flex-row gap-4">
-                    <button onClick={saveLook} className="flex-1 bg-indigo-600 text-white py-4 rounded-3xl font-black uppercase italic tracking-tighter hover:bg-indigo-700 transition-all shadow-lg">LOOK SPEICHERN</button>
-                    <button onClick={reset} className="flex-1 bg-white border-2 border-slate-200 text-slate-400 py-4 rounded-3xl font-black uppercase italic tracking-tighter hover:border-indigo-600 hover:text-indigo-600 transition-all">Anderen Look probieren</button>
+                  <div className="flex flex-col gap-4">
+                    <button onClick={saveLook} className="w-full bg-indigo-600 text-white py-5 rounded-3xl font-black uppercase italic tracking-tighter hover:bg-indigo-700 transition-all shadow-lg active:scale-95">LOOK SPEICHERN</button>
+                    <button onClick={reset} className="w-full bg-white border-2 border-slate-200 text-slate-400 py-4 rounded-3xl font-black uppercase italic tracking-tighter hover:border-indigo-600 hover:text-indigo-600 transition-all">Anderen Look probieren</button>
                   </div>
                 </div>
 
@@ -183,7 +183,7 @@ const App: React.FC = () => {
                       <div className="bg-emerald-600 text-white w-20 h-20 rounded-2xl flex items-center justify-center text-4xl font-black italic shrink-0 shadow-lg">{state.recommendedSize}</div>
                       <p className="text-emerald-900 font-bold leading-tight">Deine persönliche KI-Größenempfehlung für das <span className="uppercase">{state.selectedProduct?.name}</span>.</p>
                     </div>
-                    <p className="text-slate-500 text-sm leading-relaxed">
+                    <p className="text-slate-500 text-sm leading-relaxed italic">
                       Bitte beachte, dass dies natürlich nur eine erste Empfehlung ist. Solltest du dir bei der Größe unsicher sein, schaue dir gerne nochmal unseren Größenberater in der Produktbeschreibung an. :)
                     </p>
                   </div>
